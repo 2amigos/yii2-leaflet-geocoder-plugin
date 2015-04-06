@@ -1,6 +1,6 @@
 <?php
 /**
- * @copyright Copyright (c) 2013 2amigOS! Consulting Group LLC
+ * @copyright Copyright (c) 2013-2015 2amigOS! Consulting Group LLC
  * @link http://2amigos.us
  * @license http://www.opensource.org/licenses/bsd-license.php New BSD License
  */
@@ -72,7 +72,6 @@ class GeoCoder extends Plugin
     public function registerAssetBundle($view)
     {
         $this->getService()->registerAssetBundle($view);
-        // GeoCoderAsset::register($view);
         return $this;
     }
 
@@ -103,4 +102,4 @@ class GeoCoder extends Plugin
         return new JsExpression($js);
     }
 
-} 
+}

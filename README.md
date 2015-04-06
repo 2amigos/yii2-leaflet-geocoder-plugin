@@ -1,6 +1,14 @@
 Geo Search Plugin
 =================
 
+[![Latest Version](https://img.shields.io/github/tag/2amigos/yii2-leaflet-geocoder-plugin.svg?style=flat-square&label=release)](https://github.com/2amigos/yii2-leaflet-geocoder-plugin/tags)
+[![Software License](https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square)](LICENSE.md)
+[![Build Status](https://img.shields.io/travis/2amigos/yii2-leaflet-geocoder-plugin/master.svg?style=flat-square)](https://travis-ci.org/2amigos/yii2-leaflet-geocoder-plugin)
+[![Coverage Status](https://img.shields.io/scrutinizer/coverage/g/2amigos/yii2-leaflet-geocoder-plugin.svg?style=flat-square)](https://scrutinizer-ci.com/g/2amigos/yii2-leaflet-geocoder-plugin/code-structure)
+[![Quality Score](https://img.shields.io/scrutinizer/g/2amigos/yii2-leaflet-geocoder-plugin.svg?style=flat-square)](https://scrutinizer-ci.com/g/2amigos/yii2-leaflet-geocoder-plugin)
+[![Total Downloads](https://img.shields.io/packagist/dt/2amigos/yii2-leaflet-geocoder-plugin.svg?style=flat-square)](https://packagist.org/packages/2amigos/yii2-leaflet-geocoder-plugin)
+
+
 Yii 2 [LeafletJs](http://leafletjs.com/) Plugin that adds support for address lookup to
 Leaflet with dropdown list capabilities and loading icon feedback. This Plugin works in conjunction with
 [LeafLet](https://github.com/2amigos/yii2-leaflet-extension) library for [Yii 2](https://github.com/yiisoft/yii2)
@@ -18,12 +26,12 @@ The preferred way to install this extension is through [composer](http://getcomp
 Either run
 
 ```
-php composer.phar require "2amigos/yii2-leaflet-geocoder-plugin" "*"
+composer require 2amigos/yii2-leaflet-geocoder-plugin:~1.0
 ```
 or add
 
 ```json
-"2amigos/yii2-leaflet-geocoder-plugin" : "*"
+"2amigos/yii2-leaflet-geocoder-plugin" : "~1.0"
 ```
 
 to the require section of your application's `composer.json` file.

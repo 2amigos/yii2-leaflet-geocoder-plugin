@@ -1,0 +1,1 @@
+new L.Control.Geocoder({"showMarker":true,"geocoder":L.Control.Geocoder.nominatim({"serviceUrl":"http://nominatim.openstreetmap.org/","geocodingQueryParams":"{}","reverseQueryParams":"{}"})}).addTo()

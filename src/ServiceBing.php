@@ -1,6 +1,6 @@
 <?php
 /**
- * @copyright Copyright (c) 2013 2amigOS! Consulting Group LLC
+ * @copyright Copyright (c) 2013-2015 2amigOS! Consulting Group LLC
  * @link http://2amigos.us
  * @license http://www.opensource.org/licenses/bsd-license.php New BSD License
  */
@@ -10,17 +10,17 @@ use yii\base\InvalidConfigException;
 use yii\web\JsExpression;
 
 /**
- * ServiceMapQuest provides the required code and js files to use MapQuest geocoding service
+ * ServiceBing provides the required code and js files to use Bing geocoding service
  *
  * @author Antonio Ramirez <amigo.cobos@gmail.com>
  * @link http://www.ramirezcobos.com/
  * @link http://www.2amigos.us/
  * @package dosamigos\leaflet\plugins\geocoder
  */
-class ServiceMapQuest extends BaseService
+class ServiceBing extends BaseService
 {
     /**
-     * @var string the MapQuest's API key
+     * @var string the Bing's API key
      */
     public $key;
 
@@ -39,7 +39,7 @@ class ServiceMapQuest extends BaseService
      */
     public function registerAssetBundle($view)
     {
-        ServiceMapQuestAsset::register($view);
+        ServiceBingAsset::register($view);
     }
 
     /**
@@ -47,7 +47,7 @@ class ServiceMapQuest extends BaseService
      */
     public function getJs()
     {
-        return new JsExpression("L.Control.Geocoder.mapQuest('{$this->key}')");
+        return new JsExpression("L.Control.Geocoder.bing('{$this->key}')");
     }
 
-} 
+}

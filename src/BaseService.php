@@ -1,6 +1,6 @@
 <?php
 /**
- * @copyright Copyright (c) 2013 2amigOS! Consulting Group LLC
+ * @copyright Copyright (c) 2013-2015 2amigOS! Consulting Group LLC
  * @link http://2amigos.us
  * @license http://www.opensource.org/licenses/bsd-license.php New BSD License
  */
@@ -30,4 +30,4 @@ abstract class BaseService extends Object
      * @return \yii\web\JsExpression the javascript code for the geocoder option to be set
      */
     abstract public function getJs();
-} 
+}

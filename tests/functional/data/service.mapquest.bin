@@ -1,0 +1,1 @@
+new L.Control.Geocoder({"showMarker":true,"geocoder":L.Control.Geocoder.mapQuest('bogus-key')}).addTo()
