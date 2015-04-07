@@ -36,6 +36,7 @@ class ServiceBing extends BaseService
 
     /**
      * @inheritdoc
+     * @codeCoverageIgnore
      */
     public function registerAssetBundle($view)
     {

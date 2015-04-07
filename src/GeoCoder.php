@@ -40,6 +40,7 @@ class GeoCoder extends Plugin
 
     /**
      * Sets the service to use for geocoding
+     *
      * @param BaseService $service
      */
     public function setService(BaseService $service)
@@ -66,8 +67,11 @@ class GeoCoder extends Plugin
 
     /**
      * Registers plugin asset bundle
+     *
      * @param \yii\web\View $view
-     * @return mixed
+     *
+     * @return $this
+     * @codeCoverageIgnore
      */
     public function registerAssetBundle($view)
     {
@@ -83,9 +87,12 @@ class GeoCoder extends Plugin
     public function encode()
     {
 
-        $this->clientOptions = ArrayHelper::merge([
-            'showMarker' => true
-        ], $this->clientOptions);
+        $this->clientOptions = ArrayHelper::merge(
+            [
+                'showMarker' => true
+            ],
+            $this->clientOptions
+        );
 
         $this->clientOptions['geocoder'] = $this->getService()->getJs();
 

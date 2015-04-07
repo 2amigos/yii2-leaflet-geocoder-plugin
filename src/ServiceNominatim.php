@@ -35,6 +35,7 @@ class ServiceNominatim extends BaseService
 
     /**
      * @inheritdoc
+     * @codeCoverageIgnore
      */
     public function registerAssetBundle($view)
     {

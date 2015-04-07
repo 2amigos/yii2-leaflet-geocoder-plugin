@@ -36,6 +36,7 @@ class ServiceMapQuest extends BaseService
 
     /**
      * @inheritdoc
+     * @codeCoverageIgnore
      */
     public function registerAssetBundle($view)
     {
