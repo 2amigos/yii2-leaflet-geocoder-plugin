@@ -18,7 +18,7 @@ use yii\web\AssetBundle;
  */
 class ServiceBingAsset extends AssetBundle
 {
-    public $sourcePath = '@vendor/2amigos/yii2-leaflet-geocoder-plugin/assets';
+    public $sourcePath = '@vendor/2amigos/yii2-leaflet-geocoder-plugin/src/assets';
 
     public $js = [
         'js/l.control.geocoder.bing.js'
