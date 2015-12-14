@@ -19,6 +19,7 @@ use yii\web\AssetBundle;
 class GeoCoderAsset extends AssetBundle
 {
     public $sourcePath = '@vendor/2amigos/yii2-leaflet-geocoder-plugin/src/assets';
+
     public $css = [
         'css/l.geocoder.css'
     ];
