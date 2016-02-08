@@ -24,7 +24,7 @@
         }
     ],
     "require": {
-        "2amigos/yii2-leaflet-extension": "~1.0.*"
+        "2amigos/yii2-leaflet-extension": "1.*"
     },
     "require-dev": {
         "phpunit/phpunit": "4.*"
