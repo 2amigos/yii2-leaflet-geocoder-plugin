@@ -6,7 +6,7 @@
  */
 namespace dosamigos\leaflet\plugins\geocoder;
 
-use yii\base\Object;
+use yii\base\BaseObject;
 
 /**
  * BaseService
@@ -18,7 +18,7 @@ use yii\base\Object;
  * @link http://www.2amigos.us/
  * @package dosamigos\leaflet\plugins\geocoder
  */
-abstract class BaseService extends Object
+abstract class BaseService extends BaseObject
 {
     /**
      * Registers the required assets for the service to work
