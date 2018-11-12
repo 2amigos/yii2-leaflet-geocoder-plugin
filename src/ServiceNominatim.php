@@ -23,7 +23,7 @@ class ServiceNominatim extends BaseService
     /**
      * @var string the URL of the service
      */
-    public $serviceUrl = 'http://nominatim.openstreetmap.org/';
+    public $serviceUrl = '//nominatim.openstreetmap.org/';
     /**
      * @var array additional URL parameters (strings) that will be added to geocoding requests
      */
