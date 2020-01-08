@@ -53,8 +53,9 @@ Anybody will to help integrate more services, is very welcome :)
 use dosamigos\leaflet\layers\TileLayer;
 use dosamigos\leaflet\LeafLet;
 use dosamigos\leaflet\types\LatLng;
-use backend\extensions\leaflet\ServiceNominatim;
-use backend\extensions\leaflet\GeoCoder;
+use dosamigos\leaflet\layers\Marker;
+use dosamigos\leaflet\plugins\geocoder\ServiceNominatim;
+use dosamigos\leaflet\plugins\geocoder\GeoCoder;
 
 
 // lets use nominating service
@@ -71,6 +72,7 @@ $geoCoderPlugin = new GeoCoder([
 ]);
 
 // add a marker to center
+$center = new LatLng(['lat' => '49.006889', 'lng' => '8.403653']);
 $marker = new Marker([
     'name' => 'geoMarker',
     'latLng' => $center,
